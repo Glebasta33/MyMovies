@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_of_star">48dp</dimen>
+    <dimen name="line_margin">6dp</dimen>
+    <dimen name="top_text_margin">6dp</dimen>
+    <dimen name="right_text_margin">24dp</dimen>
+</resources>

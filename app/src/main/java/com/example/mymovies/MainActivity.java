@@ -39,6 +39,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<JSONObject> {
 
+    //Todo: [] почитать проект и поставить задачи, где нужно
+
     private Switch switchSort;
     private RecyclerView recyclerViewPosters;
     private MovieAdapter movieAdapter;
@@ -131,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onChanged(List<Movie> movies) {
                 if (page == 1) {
-                    movieAdapter.setMovies(movies  );
+                    movieAdapter.setMovies(movies);
                 }
             }
         });
@@ -149,6 +151,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     private void setMethodOfSort(boolean isTopRated) {
         if (isTopRated) {
+            //Todo: [] вынести цвета в res/values/colors
             textViewTopRated.setTextColor(Color.parseColor("#FFB300"));
             textViewPopularity.setTextColor(Color.parseColor("#FFFFFF"));
             methodOfSort = NetworkUtils.TOP_RATED;
